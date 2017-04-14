@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Bootstrap 实例 - 如何使用字形图标（Glyphicons）</title>
+	<link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.0/css/bootstrap.min.css">  
+	<script src="http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://apps.bdimg.com/libs/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+        <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                            点击我进行展开，再次点击我进行折叠。第1部分
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseOne" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        第一部分内容第一部分内容第一部分内容第一部分内容第一部分内容
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                            点击我进行展开，再次点击我进行折叠。第2部分
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        第二部分内容　第二部分内容　第二部分内容　第二部分内容　第二部分内容　第二部分内容　
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                        点击我进行展开，再次点击我进行折叠。第3部分
+                    </a>
+                </div>
+                <div id="collapseThree" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        第三部分内容　第三部分内容　第三部分内容　第三部分内容　第三部分内容　第三部分内容　
+                    </div>
+                </div>
+            </div>
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                点击我进行展开，再次点击我进行折叠。第1部分——hide方法
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse in">
+                        <div class="panel-body">
+                            第一部分内容 第一部分内容 第一部分内容 第一部分内容 第一部分内容 第一部分内容 
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFive">
+                                点击我进行展开，再次点击我进行折叠。第2部分——show方法
+                            </a>
+                        </h4>
+                    </div>
+                </div>
+                <div id="collapseFive" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        第二部分内容 第二部分内容 第二部分内容 第二部分内容 第二部分内容 
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSix">
+                            点击我进行展开，再次点击我进行折叠。第3部分——toggle方法
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseSix" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        第三部分内容 第三部分内容 第三部分内容 第三部分内容 第三部分内容 第三部分内容 
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-warning">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseSeven">
+                            点击我进行展开，再次点击我进行折叠。第4部分——options方法
+                        </a>
+                    </h4>
+                </div>
+                <div id="collapseSeven" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        第三部分内容 第三部分内容 第三部分内容 第三部分内容 第三部分内容 第三部分内容 
+                    </div>
+                </div>
+            </div>
+            <script>
+                $(function(){
+                    $('#collapseSeven').collapse({
+                        toggle:false
+                    })
+                });
+                $(function(){
+                    $('#collapseFive').collapse('show')
+                });
+                $(function(){
+                    $('#collapseSix').collapse('toggle')
+                });
+                $(function(){
+                    $('#collapseFour').collapse('hide')
+                })
+            </script>
+        </div>
+    </div>
+</body>
+</html>
